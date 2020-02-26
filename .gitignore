@@ -338,3 +338,14 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+obj/TimeTrackingApp.csproj.nuget.dgspec.json
+
+obj/TimeTrackingApp.csproj.nuget.cache
+
+obj/Debug/net461/TimeTrackingApp.exe.withSupportedRuntime.config
+
+obj/Debug/net461/TimeTrackingApp.assets.cache
+
+obj/project.assets.json
+
+obj/Debug/net461/TimeTrackingApp.csprojAssemblyReference.cache
