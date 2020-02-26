@@ -2,9 +2,47 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div>This is login page</div>
+<!-- THIS PAGE IS THE MAIN PAGE WHERE USERS CAN CLOCK IN, REQUEST PTO, A VIEW TIME AND PTO IN A REPORT FORMAT -->
 
-<div style="height: 100vh;">
-    <div>This is some content that should show to the right of the nav pane!</div>
+    <div>
+        <div class="page-title">What would you like to do?</div>
+        <div class="btn-container">
+            <button class="button btn-main btn-clock">@((2 < 3) ? "Clock In" : "Clock Out")</button>
+            <button class="button btn-main">Request PTO</button>
+        </div>
+        <div class="report-container">
+            <div class="section-container">
+                <div class="section-title">Time Entries</div>
+                <!--razor code to grab and format time entry data from db -->
+            </div>
+            <div class="section-container">
+                <div class="section-title">PTO Requests</div>
+                <!--razor code to grab and format PTO Request data from db -->
+            </div>
+        </div>
+    </div>
 
-</div>
+<style>
+    /* I REALLY LIKE THIS PURPLE #561E50 ITS REAL REAL NICE, AND WOULD BE GOOD FOR LIGHT COLOR DUSTING ACROSS APPLICATION */
+    .btn-container {
+        display: grid;
+        width: 70%;
+        margin: 4vh auto;
+        grid-column-gap: 2vh;
+        grid-template-columns: 1fr 1fr;
+    }
+    .btn-main {
+        padding: 3vh;
+        font-size: 28pt;
+        height: auto;
+        border: 1px solid #dedede;
+    }
+    .btn-clock {
+
+    }
+    .report-container {
+        width: 70%;
+        margin: auto;
+        display: block;
+    }
+</style>

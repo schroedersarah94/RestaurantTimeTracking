@@ -13,11 +13,10 @@
         <!-- Side Navigation - will display user info, current hours, links to different pages, etc -->
         <div data-role="navview" class="navview compact-lg expanded-xl">
             <div class="navview-pane">
-                <ul class="navview-menu mt-4">
+                <ul class="navview-menu">
                     <li>
                         <a href="#">
                             <span class="mif-apps icon"></span>
-                            <span class="title">all items</span>
                         </a>
                     </li>
                     <li>
@@ -25,23 +24,48 @@
                             <span class="mif-alarm icon"></span>
                             <span class="title">ABOUT PAGE LINK TEST</span>
                         </a>
+                        <button class="button">Log Out</button>
                     </li>
                 </ul>
             </div>
 
-            <div class="navview-content h-100">
+            <div class="navview-content page-container">
                 @RenderBody()
             </div>
         </div>
-        
-
-        @RenderBody()
-
     </div>
+
+    <style>
+        .navview-content {
+            height: 100vh !important;
+        }
+        .navview-menu {
+            
+        }
+
+        /* Shared page styles */
+        .page-container {
+            padding: 5vh 2vh;
+        }
+        .page-title {
+            font-size: 5vw;
+            text-align: center;
+        }
+        .section-title {
+            font-size: 2vw;
+        }
+        .section-container {
+            background-color: #ebebeb;
+            border: 1px solid #dedede;
+            padding: 10px;
+            margin: 2vh 0px;
+        }
+    </style>
 
     <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/jquery/dist/jquery.js"></script>
+
 
 </body>
 </html>
